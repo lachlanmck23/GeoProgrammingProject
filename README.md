@@ -1,5 +1,7 @@
 # GeoProgrammingProject
-Data and code repository for Geospatial Programming major project
+##Data and code repository for Geospatial Programming major project##
+
+
 
 Grocery.zip contains original grocery store point data
 
