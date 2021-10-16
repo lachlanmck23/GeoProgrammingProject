@@ -5,17 +5,15 @@ Grocery.zip contains original grocery store point data
 
 Hospitals.zip contains original hospital point data
 
-WhitehorseAddressesFull.zip contains address point data for all of Whitehorse, 
-not working with script as dataset too large
+WhitehorseAddressesFull.zip contains address point data for all of Whitehorse, takes a long time to run
 
 Whitehorse20Addresses.zip contains address point data consisting of 20 addresses, 
-works with script as proof of concept
+very useful for testing of scripts
 
 ParklandNotMerged.zip contains parkland vector file, which would be used in full/non-functional version of 
-script, but buffering to dissolve within a distance would not work with size of dataset in a script
+script, but issues were encountered with invalid geometries when using this script
 
 ParklandMergedandSplit.zip contains parkland vector file used in functional version of script, 
-has already been dissolved manually with toolbox, so can skip this step in script
+has already been dissolved manually with toolbox, so skips these steps in script, no issues with invalid geometries
 
-FinalAddressFileWScore20Addresses.zip contains final address point file output after functional script run with Whitehorse20Addresses.zip. 
-Script completes, but only works with smaller datasets. 
+FinalAddressFileWScore20Addresses.zip contains final address point file output with scores, after functional script run with Whitehorse20Addresses.zip
