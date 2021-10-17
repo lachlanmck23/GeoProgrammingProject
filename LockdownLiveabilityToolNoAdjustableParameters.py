@@ -216,7 +216,7 @@ class LockdownLiveabilityTool(QgsProcessingAlgorithm):
         #############################################################################
         #############################################################################
 
-        ## Add address layer to view, followed by obtaining features with getFeatures method, for subsequent loop
+        ## Add address layer to view
         addressLayer = iface.addVectorLayer(in_path + addressFile, addressFile[:-4], 'ogr')
 
         ## Define parameter dictionary, and run buffer tool
@@ -276,7 +276,7 @@ class LockdownLiveabilityTool(QgsProcessingAlgorithm):
         HGcountFile = 'bufferHGcount.shp'
         HGcountLayer = iface.addVectorLayer(out_path + HGcountFile, HGcountFile[:-4], 'ogr')
 
-        ## Add parkland layer to view, followed by obtaining features with getFeatures method, for subsequent loop
+        ## Add parkland layer to view
         parklandLayer = iface.addVectorLayer(in_path + parklandFile, parklandFile[:-4], 'ogr')
 
         ## Define parameter dictionary, and run buffer tool
